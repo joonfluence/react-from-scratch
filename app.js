@@ -21,6 +21,5 @@ const creatorMap = {
   div: createDiv,
 };
 
-function createElement(type, props) {
-  creatorMap[type](props);
-}
+const coupler = (map) => (type, props) => map[type](props);
+const createElement = coupler(creatorMap);
