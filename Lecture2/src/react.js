@@ -17,7 +17,18 @@ export function createDOM(node) {
 export function createElement(tag, props, ...children) {
   props = props || {};
 
-  return { tag, props, children };
+  if (typeof tag === "function") {
+    if (children.length > 0) {
+      return tag({
+        ...props,
+        children: children.length === 1 ? children[0] : children,
+      });
+    } else {
+      return tag(props);
+    }
+  } else {
+    return { tag, props, children };
+  }
 }
 
 export function render(vdom, container) {
