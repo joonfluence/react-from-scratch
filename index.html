@@ -3,15 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let's learn React</title>
+    <title>Document</title>
     <body>
       <div id="app"></div>
       <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
       <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-      <script defer type="text/javascript">
+      <script defer src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+      <script defer type="text/babel">
+        
         const container = document.getElementById('app');
         const root = ReactDOM.createRoot(container); // createRoot(container!) if you use TypeScript
-        root.render("Let's learn React. 🚀");
+        
+        const Title = () => {
+          return (
+            <h1>Develop. Preview. Ship. 🚀</h1>
+          )
+        }
+        const Home = () => {
+          return (
+            <>
+              <Title />
+              <div>Home</div>
+            </>
+          )
+        }
+        
+        root.render(<Home />);
       </script>
     </body>
 </html>
