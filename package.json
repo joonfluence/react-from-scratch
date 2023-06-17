@@ -1,0 +1,25 @@
+{
+  "name": "react-from-scratch",
+  "version": "1.0.0",
+  "description": "[https://nextjs.org/learn/foundations/from-react-to-nextjs](https://nextjs.org/learn/foundations/from-react-to-nextjs)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://joonfluence: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@github.com/joonfluence/react-from-scratch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joonfluence/react-from-scratch/issues"
+  },
+  "homepage": "https://github.com/joonfluence/react-from-scratch#readme",
+  "dependencies": {
+    "next": "^13.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
